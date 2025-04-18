@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Press Button</title>
+    <title>Just a button...</title>
     <style>
         body {
             display: flex;
@@ -17,14 +17,15 @@
         }
 
         button {
-            padding: 1rem 2rem;
-            font-size: 1.5rem;
+            padding: 1rem 3rem;
             background: #e74c3c;
             border: none;
-            border-radius: 8px;
+            border-radius: 12px;
             color: white;
             cursor: pointer;
             transition: transform 0.1s;
+            width: 80%;
+            max-width: 300px;
         }
 
         button:active {
@@ -34,7 +35,7 @@
 </head>
 
 <body>
-    <h1>Press the Button...</h1>
+    <h1>Just a button...</h1>
     <button onclick="document.getElementById('audio').play()"> </button>
     <audio id="audio" src="GET OUT.mp3"></audio>
 </body>
