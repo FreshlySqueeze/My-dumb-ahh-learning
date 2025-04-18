@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Press Button</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            background: #e74c3c;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Press the Button...</h1>
+    <button onclick="document.getElementById('audio').play()">GET OUT</button>
+    <audio id="audio" src="GET OUT.mp3"></audio>
+</body>
+
+</html>
