@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sound Board</title>
     <style>
         body {
@@ -58,11 +58,11 @@
 <body>
     <h1>Press a Button...</h1>
     <div class="button-container">
-        <button onclick="document.getElementById('audio1').play()">GET OUT!</button>
-        <button onclick="document.getElementById('audio2').play()">Let Me Know...</button>
-        <button onclick="document.getElementById('audio3').play()">We're Cooked...</button>
-        <button onclick="document.getElementById('audio4').play()">Brand New Saxophone...</button>
-        <button onclick="document.getElementById('audio5').play()">Thank you for the love...</button>
+        <button onclick="playSound('audio1')">GET OUT!</button>
+        <button onclick="playSound('audio2')">Let Me Know...</button>
+        <button onclick="playSound('audio3')">We're Cooked...</button>
+        <button onclick="playSound('audio4')">Brand New Saxophone...</button>
+        <button onclick="playSound('audio5')">Thank you for the love...</button>
     </div>
 
     <audio id="audio1" src="GET OUT.mp3"></audio>
