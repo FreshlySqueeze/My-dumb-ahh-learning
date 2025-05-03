@@ -64,11 +64,34 @@
         <button onclick="document.getElementById('audio4').play()">Brand New Saxophone...</button>
         <button onclick="document.getElementById('audio5').play()">Thank you for the love...</button>
     </div>
+
     <audio id="audio1" src="GET OUT.mp3"></audio>
     <audio id="audio2" src="Let Me Know.mp3"></audio>
     <audio id="audio3" src="Cooked Dog Meme.mp3"></audio>
     <audio id="audio4" src="Brand New Saxophone.mp3"></audio>
     <audio id="audio5" src="Thank you for the love.mp3"></audio>
+
+    <script>
+        const audios = [
+            document.getElementsById('audio1'),
+            document.getElementsById('audio2'),
+            document.getElementsById('audio3'),
+            document.getElementsById('audio4'),
+            document.getElementsById('audio5')
+        ];
+
+        function playSound(id) {
+            // Stop all audios first
+            audios.forEach(audio => {
+                audio.pause();
+                audio.currentTime = 0;
+            });
+
+            // Play the selected one
+            const selected = document.getElementById(id);
+            selected.play();
+        }
+    </script>
 </body>
 
 </html>
