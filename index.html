@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>Select Button</title>
+    <title>Sound Board</title>
     <style>
         body {
             display: flex;
@@ -22,17 +22,24 @@
             margin-bottom: 2rem;
         }
 
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 90%;
+            max-width: 400px;
+        }
+
         button {
-            padding: 2rem 3rem;
-            font-size: 2.5rem;
+            padding: 2rem;
+            font-size: 2rem;
             background: #e74c3c;
             border: none;
             border-radius: 16px;
             color: white;
             cursor: pointer;
             transition: transform 0.1s;
-            width: 90%;
-            max-width: 400px;
+            width: 100%;
         }
 
         button:active {
@@ -41,8 +48,8 @@
 
         @media (max-width:600px) {
             button {
-                font-size: 3rem;
-                padding: 2.5rem 3rem;
+                font-size: 2.5rem;
+                padding: 2.5rem;
             }
         }
     </style>
@@ -50,8 +57,12 @@
 
 <body>
     <h1>Press the Button...</h1>
-    <button onclick="document.getElementById('audio').play()">GET OUT</button>
-    <audio id="audio" src="GET OUT.mp3"></audio>
+    <div class="button-container">
+        <button onclick="document.getElementById('audio1').play()">GET OUT</button>
+        <button onclick="document.getElementById('audio2').play()">Let Me Know</button>
+    </div>
+    <audio id="audio1" src="GET OUT.mp3"></audio>
+    <audio id="audio2" src="Let Me Know.mp3"></audio>
 </body>
 
 </html>
