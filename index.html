@@ -64,17 +64,25 @@
     <h1>Press a Button...</h1>
     <div class="button-container">
         <button onclick="playSound('audio1')">GET OUT!</button>
-        <button onclick="playSound('audio2')">Let Me Know...</button>
-        <button onclick="playSound('audio3')">We're Cooked...</button>
-        <button onclick="playSound('audio4')">Brand New Saxophone...</button>
-        <button onclick="playSound('audio5')">Thank you for the love...</button>
+        <button onclick="playSound('audio2')">Vine Boom</button>
+        <button onclick="playSound('audio3')">Lobotomy</button>
+        <button onclick="playSound('audio4')">Metal Pipe</button>
+        <button onclick="playSound('audio5')">Let Me Know...</button>
+        <button onclick="playSound('audio6')">We're Cooked...</button>
+        <button onclick="playSound('audio7')">Brand New Saxophone...</button>
+        <button onclick="playSound('audio8')">Bwomp bwmop bwbwomp...</button>
+        <button onclick="playSound('audio9')">Thank you for the love...</button>
     </div>
 
     <audio id="audio1" src="GET OUT.mp3"></audio>
-    <audio id="audio2" src="Let Me Know.mp3"></audio>
-    <audio id="audio3" src="Cooked Dog Meme.mp3"></audio>
-    <audio id="audio4" src="Brand New Saxophone.mp3"></audio>
-    <audio id="audio5" src="Thank you for the love.mp3"></audio>
+    <audio id="audio2" src="Vine Boom.mp3"></audio>
+    <audio id="audio3" src="Lobotomy.mp3"></audio>
+    <audio id="audio4" src="Metal Pipe.mp3"></audio>
+    <audio id="audio5" src="Let Me Know.mp3"></audio>
+    <audio id="audio6" src="Cooked Dog Meme.mp3"></audio>
+    <audio id="audio7" src="Brand New Saxophone.mp3"></audio>
+    <audio id="audio8" src="Running Off.mp3"></audio>
+    <audio id="audio9" src="Thank you for the love.mp3"></audio>
 
     <script>
         const audios = [
@@ -82,7 +90,11 @@
             document.getElementById('audio2'),
             document.getElementById('audio3'),
             document.getElementById('audio4'),
-            document.getElementById('audio5')
+            document.getElementById('audio5'),
+            document.getElementById('audio6'),
+            document.getElementById('audio7'),
+            document.getElementById('audio8'),
+            document.getElementById('audio9')
         ];
 
         function playSound(id) {
