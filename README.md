@@ -1,3 +1,3 @@
-I made a dumb button for fun :)
+I made a sound board for fun :)
 
-https://freshlysqueeze.github.io/My-dumb-ahh-learning/
+https://freshlysqueeze.github.io/Sound_Board/
