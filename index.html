@@ -57,21 +57,29 @@
                 font-size: 1.5rem;
             }
         }
+
+        .sfx {
+            background-color: orange;
+        }
+
+        .song {
+            background-color: orangered;
+        }
     </style>
 </head>
 
 <body>
     <h1>Press a Button...</h1>
     <div class="button-container">
-        <button onclick="playSound('audio1')">GET OUT!</button>
-        <button onclick="playSound('audio2')">Vine Boom</button>
-        <button onclick="playSound('audio3')">Lobotomy</button>
-        <button onclick="playSound('audio4')">Metal Pipe</button>
-        <button onclick="playSound('audio5')">Let Me Know...</button>
-        <button onclick="playSound('audio6')">We're Cooked...</button>
-        <button onclick="playSound('audio7')">Brand New Saxophone...</button>
-        <button onclick="playSound('audio8')">Bwomp bwmop bwbwomp...</button>
-        <button onclick="playSound('audio9')">Thank you for the love...</button>
+        <button class="sfx" onclick="playSound('audio1')">GET OUT!</button>
+        <button class="sfx" onclick="playSound('audio2')">Vine Boom</button>
+        <button class="sfx" onclick="playSound('audio3')">Lobotomy</button>
+        <button class="sfx" onclick="playSound('audio4')">Metal Pipe</button>
+        <button class="song" onclick="playSound('audio5')">Let Me Know...</button>
+        <button class="song" onclick="playSound('audio6')">We're Cooked...</button>
+        <button class="song" onclick="playSound('audio7')">Brand New Saxophone...</button>
+        <button class="song" onclick="playSound('audio8')">Bwomp bwmop bwbwomp...</button>
+        <button class="song" onclick="playSound('audio9')">Thank you for the love...</button>
     </div>
 
     <audio id="audio1" src="GET OUT.mp3"></audio>
