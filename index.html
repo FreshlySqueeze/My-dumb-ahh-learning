@@ -17,6 +17,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 1rem;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -27,8 +28,10 @@
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
-            width: 90%;
+            width: 100%;
             max-width: 400px;
+            padding: 0 1rem;
+            /*prevents button from touching screen edge*/
         }
 
         button {
@@ -67,6 +70,12 @@
 
             h1 {
                 font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .button-container {
+                gap: 1rem;
+                padding: 0 0.5rem;
             }
         }
     </style>
